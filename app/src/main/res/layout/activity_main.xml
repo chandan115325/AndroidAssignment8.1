@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.androidassignment81.MainActivity">
+
+    <!--Ascending button to display the list in ascending order-->
+    <Button
+        android:id="@+id/ascendingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Ascending"
+        android:layout_margin="20dp"/>
+
+    <!--Descending button to display the list in descending order-->
+    <Button
+        android:id="@+id/descendingButton"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descending"/>
+
+    <!-- ListView to display the list items -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/ascendingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+    </ListView>
+</RelativeLayout>
